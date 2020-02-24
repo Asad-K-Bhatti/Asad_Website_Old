@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../CSS/Slideshow_CSS.css">
-<script type="text\javascript" src="../JScript/Slideshow_JScript.js"></script>
 </head>
 <body>
 
@@ -99,14 +98,6 @@
   </div>
 </div>
 
-<!-- Work Section -->
-<div class="w3-container w3-center" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">Game File</h3>
-  <p class="w3-center"> Click link below to Download! </p>
-  <a href="../Files/Mario_Kart_Remastered.zip" onclick="w_close()" class="w3-center w3-bar-item w3-button w3-hover-grey"><strong>--> Mario Kart Remastered <--</strong></a>
-  <p class="w3-center"> Requirements: Mac/Windows OS, Python with Pygame installed </p>
-</div>
-
 <!-- Modal for full size images on click-->
 <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
   <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
@@ -124,19 +115,19 @@
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="../Pictures/mario_kart_remastered_pictures/img1.png" style="width:100%">
+    <img src="../Pictures/mario_kart_remastered_pictures/img1.png" style="width:50%">
     <div class="text">Main Menu</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="../Pictures/mario_kart_remastered_pictures/img2.png" style="width:100%">
+    <img src="../Pictures/mario_kart_remastered_pictures/img2.png" style="width:50%">
     <div class="text">Single Player</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="../Pictures/mario_kart_remastered_pictures/img3.png" style="width:100%">
+    <img src="../Pictures/mario_kart_remastered_pictures/img3.png" style="width:50%">
     <div class="text">Multiplayer</div>
   </div>
 
@@ -144,14 +135,24 @@
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<br>
 
 <!-- The dots/circles -->
-<div style="text-align:center">
+<div class="w3-amber w3-center" style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
+
+<script src="../JScript/Slideshow_JScript.js"></script>
+
+<!-- Game Download Section -->
+<div class="w3-container w3-center" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Game File</h3>
+  <p class="w3-center"> Click link below to Download! </p>
+  <a href="../Files/Mario_Kart_Remastered.zip" onclick="w_close()" class="w3-center w3-bar-item w3-button w3-hover-grey"><strong>--> Mario Kart Remastered <--</strong></a>
+  <p class="w3-center"> Requirements: Mac/Windows OS, Python with Pygame installed </p>
+</div>
+
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
